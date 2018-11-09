@@ -5,3 +5,4 @@
 */env/
 env/
 src/tutorial/db.sqlite3
+src/project/db.sqlite3
