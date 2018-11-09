@@ -4,3 +4,4 @@
 .vscode/
 */env/
 env/
+src/tutorial/db.sqlite3
