@@ -19,12 +19,15 @@ from django.conf.urls import url
 from django.urls import include
 
 from core import views
-from rest_framework.authtoken.views import obtain_auth_token
+# from rest_framework.authtoken.views import obtain_auth_token
+from core.views import obtain_auth_token
+from core.views import TestView
+
 import rest_auth
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', views.HelloView.as_view(), name='hello'),
+    path('test/', TestView.as_view(), name='test'),
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
-    url(r'^rest-auth/', include('rest_auth.urls'))
 ]
