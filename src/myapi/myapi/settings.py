@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'rest_auth',
     # Local Apps (Your project's apps)
     'core',
+    'drf_yasg',
 ]
 
 REST_FRAMEWORK = {
